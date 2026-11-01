@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satzz project- Portal Berita Terkini</title>
+    <style>
+        /* Pengaturan Dasar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header / Navigasi */
+        header {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #ff4757;
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ff4757;
+        }
+
+        /* Konten Utama */
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        /* Berita Utama (Featured) */
+        .featured-news {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+        }
+
+        .featured-news img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+        }
+
+        .featured-news h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            color: #111;
+        }
+
+        .meta-info {
+            font-size: 0.85rem;
+            color: #777;
+            margin-bottom: 1rem;
+        }
+
+        /* Grid Berita Lainnya */
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .news-card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .news-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .news-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .news-card-content {
+            padding: 1.5rem;
+        }
+
+        .news-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #222;
+        }
+
+        .news-card p {
+            font-size: 0.95rem;
+            color: #666;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #1a1a1a;
+            color: #fff;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Website -->
+    <header>
+        <div class="logo">Satzz</div>
+        <nav>
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Tentang Kami</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Konten Utama Website -->
+    <div class="container">
+
+        <!-- Berita Utama / Headline -->
+        <section class="featured-news">
+            <!-- Ganti atribut 'src' dengan link gambar Anda -->
+            <img src="https://i.postimg.cc/3RZkNhTv/IMG-a77582a6-e1f5-4d5f-ba88-7423920c6c6f.jpg" alt="Gambar Berita Utama">
+            <h1>Kolaborasi dari game Honkai star rail telah hadir dengan menghadirkan dua character baru yaitu Gilgamesh dan Rin Toshaka</h1>
+            <div class="meta-info">Dipublikasikan oleh Satzz | 26 Juli 2026</div>
+            <p>Seperti yang kita tahu honkai star rail adalah sebuah game buatan dari Hoyoverse dengan gameplay Trun base, dan kali ini Honkai star rail melakukan kolaborasi kedua kalinya dengan sebuah series Fate stay night dan di kolaborasi tersebut menghadirkan dua character baru </p>
+        </section>
+
+        <!-- Daftar Berita Tambahan -->
+        <section class="news-grid">
+            
+            <!-- Kartu Berita 1 -->
+            <div class="news-card">
+                <img src="https://i.postimg.cc/mrCzxMpj/Character-Gilgamesh-Splash-Art-(1).webp" alt="Berita 1">
+                <div class="news-card-content">
+                    <h3>Pengenalan singkat tentang Gilgamesh</h3>
+                        <p>Gilgamesh adalah character bintang lima yang bisa di dapatkan secara GRATIS hanya dengan login selama durasi event masih berlangsung.</p>
+                    <p class="spasi-bawah 50px".</p>
+                    
+                    <h4>Tipe Combat dan Path.</h4>
+                    <p>Gilgamesh character dengan Combat type Lighting dan Path Destruction.</p>
+                    <h4> Keunikan</h4>
+                    <p>Gilgamesh memiliki keunikan daripada character lainnya yaitu "backup demage" yang ada pada Talent nya,dimana backup demage bisa terpicu jika character Saber berada di dalam party.</p>
+                    
+                    <b> Talent </b> <br>
+                    <img src="https://i.postimg.cc/c1YDD5cJ/Ability-Amuse-Me-to-the-Fullest.webp" alt="Berita 1" alt="https://cdn.phototourl.com/free/2026-07-27-af1c631a-7191-4c4b-ae7b-d060e3f7286e.webp" style="width: 70px; height: auto;" align="left" width="150"
+           <strong> </strong>  <h4> I Grant You Permission To Strike</h4>
+                    <h5>ketika Saber ataupun Gilgamesh mengunakan skill,normal atk,ulti sebanyak 8x maka akan terpicu Backup demage yang dimana Gilgamesh dan Saber menyerang secara bersamaan dan memberikan demage area serta memulihkan energi saber sebanyak 120 point.</h5>
+                    <a href="https://honkai-star-rail.fandom.com/wiki/Gilgamesh" class="card-link" target="_blank" rel="noopener">Selengkapnya di Honkai-star-rail.wiki <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+                
+            <!-- Kartu Berita 2 -->
+            <div class="news-card">
+                <img src="https://i.postimg.cc/d1C9xLGw/Character-Rin-Tohsaka-Splash-Art.webp" alt="Berita 2">
+                <div class="news-card-content">
+                    <h3>Pengenalan singkat tentang Rin Toshaka</h3>
+                    <p>Rin Toshaka adalah character bintang 5 yang bisa didapatkan melalu warp kolaborasi.</p>
+                    <p class="spasi-bawah 50px".</p/>
+                  
+                    <h4>Tipe Combat dan Path.</h4>
+                    <p>Rin Toshaka character dengan tipe combat Quantum dan Path Erudition</p>
+                    <h4>Keunikan</h4>
+                     <p>Rin Toshaka memiliki keunikan yaitu "Backup demage" di Talent nya, yang dimana backup demage bisa terpicu jika character Archer berada di dalam party. </p>
+                    <b>Talent</b> <br>
+                    <img src="https://i.postimg.cc/j5yzhBrt/Ability-Gem-Magecraft.webp" alt="Berita 2" alt="https://cdn.phototourl.com/free/2026-07-27-45982331-187a-44ab-888a-6b8a344a7e7f.webp" style="width: 70px; height: auto;" align="left" width="150"
+                        <strong> </strong> <h4> Freeform Tohsaka Style</h4>
+                        <h5>Ketika Archer menggunakan skill "Caladbolg II: Fake Spiral Sword" sebanyak 4x maka Backup demage akan terpicu, yang dimana Rin Toshaka dengan Archer akan menyerang bersamaan dan mengakibatkan demage area kepada musuh, selain itu akan memulihkan Skill point sebanyak 4. </h5>
+                       <a href="https://honkai-star-rail.fandom.com/wiki/Rin_Tohsaka" class="card-link" target="_blank" rel="noopener">Selengkapnya di Honkai-star-rail.wiki <i class="fas fa-arrow-right"></i></a> 
+                </div>
+            </div>
+
+                
+                
+            <!-- Kartu Berita 3 -->
+            <div class="news-card">
+                <img src="https://i.postimg.cc/mrXqszcz/IMG-20260728-092326.jpg" alt="Berita 3">
+                <div class="news-card-content">
+                    <h3>Newbie developer</h3>
+                    <p>Satria yudistira adalah murid dari sekolah Smk panca bhakti rakit. </p>
+                    <h4>Tentang</h4>
+                    <p>Untuk info lebih lanjut akan datang kemudian hari.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Satzz News. Hak Cipta Dilindungi.</p>
+    </footer>
+
+</body>
+</html>
